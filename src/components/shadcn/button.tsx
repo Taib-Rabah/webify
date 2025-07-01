@@ -47,10 +47,12 @@ function Button({
   }) {
   const Comp = asChild ? Slot : "button"
 
+  const baseClasses = "cursor-pointer active:scale-95"
+
   return (
     <Comp
       data-slot="button"
-      className={cn(buttonVariants({ variant, size, className }))}
+      className={cn(baseClasses, buttonVariants({ variant, size, className }))}
       {...props}
     />
   )
