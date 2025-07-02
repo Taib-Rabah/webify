@@ -35,7 +35,7 @@ export default function ThemeToggler() {
           <DropdownMenuItem
             key={theme}
             onClick={updateTheme(theme)}
-            className="flex items-center justify-between"
+            className="flex items-center justify-between cursor-pointer"
           >
             <span>{upperFirst(theme)}</span>
             {theme === currentTheme ? <Check /> : null}

@@ -47,7 +47,7 @@ function Button({
   }) {
   const Comp = asChild ? Slot : "button"
 
-  const baseClasses = "cursor-pointer active:scale-95"
+  const baseClasses = "cursor-pointer active:scale-98"
 
   return (
     <Comp
