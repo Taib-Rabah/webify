@@ -1,0 +1,11 @@
+@theme inline {
+  --breakpoint-*: initial;
+  --breakpoint-2xs: 17.5rem;
+  --breakpoint-xs: 23rem;
+  --breakpoint-sm: 36rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 62rem;
+  --breakpoint-xl: 80rem;
+  --breakpoint-2xl: 96rem;
+  --breakpoint-3xl: 120rem;
+}
