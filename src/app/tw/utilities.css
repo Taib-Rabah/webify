@@ -15,10 +15,25 @@
 }
 
 :root {
-  --wrapper-width: 71.25rem;
+  --wrapper-padding: 2rem;
+  --wrapper-width: min(calc(theme(breakpoint.xl) - var(--wrapper-padding) * 2), 100dvw);
+
+  @media (width < theme("breakpoint.xl")) {
+    --wrapper-padding: 1rem;
+  }
+}
+
+@layer components {
+  .wrapper {
+    display: grid;
+    grid-template-columns: var(--wrapper-padding) var(--wrapper-width) var(--wrapper-padding);
+    justify-content: center;
+    > * {
+      grid-column: 2;
+    }
+  }
 }
 
 @theme inline {
   --spacing-wrapper: var(--wrapper-width);
 }
-

@@ -1,11 +1,10 @@
 @theme inline {
   --breakpoint-*: initial;
-  --breakpoint-2xs: 17.5rem;
-  --breakpoint-xs: 23rem;
-  --breakpoint-sm: 36rem;
-  --breakpoint-md: 48rem;
-  --breakpoint-lg: 62rem;
-  --breakpoint-xl: 80rem;
-  --breakpoint-2xl: 96rem;
-  --breakpoint-3xl: 120rem;
+  --breakpoint-2xs: 17.5rem; /* 280px */
+  --breakpoint-xs: 23rem; /* 368px */
+  --breakpoint-sm: 36rem; /* 576px */
+  --breakpoint-md: 48rem; /* 768px */
+  --breakpoint-lg: 62rem; /* 992px */
+  --breakpoint-xl: 80rem; /* 1280px */
+  --breakpoint-2xl: 90rem; /* 1440px */
 }

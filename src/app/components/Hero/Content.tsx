@@ -4,7 +4,7 @@ import { Button } from "~/components/shadcn/button";
 export default function Content() {
   return (
     <div className="flex flex-col gap-10 items-start">
-      <p className="font-bold text-6xl">{data.title}</p>
+      <p className="font-bold text-5xl xl:text-6xl">{data.title}</p>
       <p className="text-white/70 max-w-md text-lg">{data.description}</p>
       <Button variant={"link"} size="min" className="text-[#68D585] font-semibold text-xl">
         Get a free trial <ArrowRight className="stroke-3" />
