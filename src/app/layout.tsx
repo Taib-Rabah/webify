@@ -21,10 +21,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.variable} antialiased max-w-7xl mx-auto w-dvw!`}>
+      <body className={`${geistSans.variable} antialiased`}>
         <Providers>
-          <Header />
-          {children}
+          <div className="max-w-6xl mx-auto">
+            <Header />
+            {children}
+          </div>
         </Providers>
       </body>
     </html>
