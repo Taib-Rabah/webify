@@ -1,11 +1,15 @@
 "use client";
 
-import { DropdownMenuItem } from "@radix-ui/react-dropdown-menu";
-import { Moon, Sun } from "lucide-react";
+import { Check, Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 
 import { Button } from "~/components/shadcn/button";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from "~/components/shadcn/dropdown-menu";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "~/components/shadcn/dropdown-menu";
 import { upperFirst } from "~/lib/utils";
 
 export type Theme = "light" | "dark" | "system";
@@ -26,10 +30,15 @@ export default function ThemeToggler() {
           <span className="sr-only">Toggle theme</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
+      <DropdownMenuContent align="start">
         {themes.map((theme) => (
-          <DropdownMenuItem key={theme} onClick={updateTheme(theme)}>
-            {upperFirst(theme)}
+          <DropdownMenuItem
+            key={theme}
+            onClick={updateTheme(theme)}
+            className="flex items-center justify-between"
+          >
+            <span>{upperFirst(theme)}</span>
+            {theme === currentTheme ? <Check /> : null}
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>

@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@import "./utilities.css";
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -45,8 +47,8 @@
 
 :root {
   --radius: 0.625rem;
-  --background: #F4F7FA;
-  --foreground: #161C2D;
+  --background: #f4f7fa;
+  --foreground: #161c2d;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
@@ -120,5 +122,8 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  p {
+    @apply text-pretty;
   }
 }

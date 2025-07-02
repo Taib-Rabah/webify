@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@utility content-empty {
+  --tw-content: "";
+  content: var(--tw-content);
+}
+
+@utility decoration-only {
+  pointer-events: none;
+  user-select: none;
+}
