@@ -9,3 +9,15 @@
   pointer-events: none;
   user-select: none;
 }
+
+@utility grid-cols-trick {
+  @apply grid-cols-[auto_var(--wrapper-width)_auto];
+}
+
+:root {
+  --wrapper-width: 71.25rem;
+}
+
+@theme inline {
+  --spacing-wrapper: var(--wrapper-width);
+}

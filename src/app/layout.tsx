@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.variable} antialiased`}>
         <Providers>
-          <div className="max-w-6xl mx-auto">
+          <div className="mx-auto grid min-h-dvh grid-cols-trick grid-rows-[1fr_auto]">
             <Header />
             {children}
           </div>
