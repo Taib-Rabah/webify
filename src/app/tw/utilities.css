@@ -10,15 +10,19 @@
   user-select: none;
 }
 
-@utility grid-cols-trick {
-  @apply grid-cols-[auto_var(--wrapper-width)_auto];
+@utility z-top {
+  z-index: 9999;
+}
+
+@utility z-top-* {
+  z-index: calc(9999 + --value(integer));
 }
 
 :root {
   --wrapper-padding: 2rem;
-  --wrapper-width: min(calc(theme(breakpoint.xl) - var(--wrapper-padding) * 2), 100dvw);
+  --wrapper-width: min(theme("breakpoint.xl"), calc(100dvw - var(--wrapper-padding) * 2));
 
-  @media (width < theme("breakpoint.xl")) {
+  @media (width < theme("breakpoint.lg")) {
     --wrapper-padding: 1rem;
   }
 }
@@ -36,4 +40,10 @@
 
 @theme inline {
   --spacing-wrapper: var(--wrapper-width);
+}
+
+/*  */
+
+@utility fs-* {
+  font-size: calc(--value(number, [number]) * 1rem / 4);
 }

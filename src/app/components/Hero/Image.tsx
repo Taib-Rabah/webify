@@ -1,9 +1,5 @@
 import NextImage from "next/image";
 
 export default function Image() {
-  return (
-    <div className="h-100 relative">
-      <NextImage className="rounded-2xl" src="/hero.jpg" alt="hero" fill />
-    </div>
-  );
+  return <NextImage className="rounded-2xl mx-auto" src="/hero.jpg" alt="hero" width={600} height={400} />;
 }

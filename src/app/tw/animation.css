@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@keyframes horizontal-infinite-scroll {
+  to {
+    translate: -100%;
+  }
+}
+
+@utility horizontal-infinite-scroll {
+  animation: horizontal-infinite-scroll 14s linear infinite;
+}

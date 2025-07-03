@@ -32,17 +32,28 @@ export default function Header() {
   return (
     <header
       data-scrolled={scrolled}
-      className="py-4 data-scrolled:-translate-y-full bg-hero-background fixed top-0 w-full backdrop-blur-lg duration-300"
+      className="py-4 md:px-12 data-scrolled:-translate-y-full bg-hero-background/85 fixed z-top top-0 w-full backdrop-blur-lg duration-300"
     >
       <div className="max-w-wrapper mx-auto flex items-center">
-        <div className="flex items-center gap-6">
-          <Logo />
-          <span aria-hidden className="w-3 h-1 mt-1 bg-hero-foreground rounded-full decoration-only"></span>
+        <Logo />
+        <div className="not-lg:hidden flex gap-8 items-center ml-8">
+          <Separator />
           <ThemeToggler />
         </div>
-        <Nav />
-        <Button className="ml-8 font-semibold">Start a free trial</Button>
+        <div className="flex ml-auto gap-3 md:gap-8">
+          <Nav />
+          <Button className="font-semibold not-lg:-order-1">Start a free trial</Button>
+        </div>
       </div>
     </header>
+  );
+}
+
+function Separator() {
+  return (
+    <span
+      aria-hidden
+      className="inline-block w-3 h-1 mt-1 bg-hero-foreground rounded-full decoration-only"
+    ></span>
   );
 }
