@@ -1,6 +1,7 @@
-export default function Askimat() {
+export default function Askimat({ className }: { className?: string }) {
   return (
     <svg
+      className={className}
       width="101"
       height="26"
       viewBox="0 0 101 26"

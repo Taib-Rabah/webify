@@ -1,6 +1,7 @@
-export default function Greener() {
+export default function Greener({ className }: { className?: string }) {
   return (
     <svg
+      className={className}
       width="147"
       height="28"
       viewBox="0 0 147 28"

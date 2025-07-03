@@ -1,6 +1,7 @@
-export default function Dorfus() {
+export default function Dorfus({ className }: { className?: string }) {
   return (
     <svg
+      className={className}
       width="110"
       height="30"
       viewBox="0 0 110 30"

@@ -1,6 +1,7 @@
-export default function Coworks() {
+export default function Coworks({ className }: { className?: string }) {
   return (
     <svg
+      className={className}
       width="148"
       height="30"
       viewBox="0 0 148 30"

@@ -13,7 +13,7 @@ export default function Header() {
   useEffect(() => {
     const controller = new AbortController();
 
-    const scrollHandler = (ev: Event) => {
+    const scrollHandler = () => {
       const scrollY = window.scrollY;
       const scrolledDown = scrollY > prevScrollY.current;
       if (scrolledDown) {

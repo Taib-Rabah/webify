@@ -1,7 +1,8 @@
-export default function MakeLess() {
+export default function MakeLess({ className }: { className?: string }) {
   return (
     <div>
       <svg
+        className={className}
         width="140"
         height="24"
         viewBox="0 0 140 24"

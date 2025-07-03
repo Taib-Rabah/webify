@@ -1,7 +1,8 @@
-export default function SaaSToday() {
+export default function SaaSToday({ className }: { className?: string }) {
   return (
     <div>
       <svg
+        className={className}
         width="93"
         height="34"
         viewBox="0 0 93 34"

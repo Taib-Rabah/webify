@@ -18,6 +18,14 @@
   z-index: calc(9999 + --value(integer));
 }
 
+@utility grid-single {
+  display: grid;
+  grid-template-areas: "single";
+  > * {
+    grid-area: single;
+  }
+}
+
 :root {
   --wrapper-padding: 2rem;
   --wrapper-width: min(theme("breakpoint.xl"), calc(100dvw - var(--wrapper-padding) * 2));
