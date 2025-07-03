@@ -9,7 +9,7 @@ export default function Features() {
     <div className="wrapper overflow-hidden">
       <div>
         <FeaturesOverview />
-        <div className="mt-15 mb-30 sm:mt-30 flex flex-col gap-24 sm:gap-40">
+        <div className="mt-6 md:mt-15 mb-12 md:mb-30 sm:mt-30 flex flex-col gap-14 md:gap-24 sm:gap-40">
           {features.map((feature) => (
             <Feature key={feature.id} {...feature} />
           ))}
@@ -21,7 +21,7 @@ export default function Features() {
 
 function Feature({ title, description, image, imagePosition, CTA }: FeatureProps) {
   return (
-    <div className="flex gap-12 sm:gap-20 items-center not-xl:flex-col not-xl:text-center">
+    <div className="flex gap-12 sm:gap-20 items-center not-xl:flex-col min-sm:max-xl:text-center">
       <FeatureImage image={image} imagePosition={imagePosition} />
       <FeatureContent title={title} description={description} CTA={CTA} />
     </div>
@@ -30,7 +30,7 @@ function Feature({ title, description, image, imagePosition, CTA }: FeatureProps
 
 function FeatureContent({ title, description, CTA }: Pick<FeatureProps, "title" | "description" | "CTA">) {
   return (
-    <div className="flex flex-col gap-5 sm:gap-8 max-w-md not-xl:items-center">
+    <div className="flex flex-col gap-5 sm:gap-8 max-w-md min-sm:max-xl:items-center">
       <h2 className="font-bold text-2xl text-balance sm:text-3xl md:text-4xl">{title}</h2>
       <p className="sm:text-lg md:text-xl">{description}</p>
       <Button asChild variant={"link"} size="min">

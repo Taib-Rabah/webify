@@ -1,4 +1,5 @@
 import { Companies, Features, Hero, Pricing } from "~/app/components";
+import Testimonials from "./components/Testimonials";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <Companies />
       <Features />
       <Pricing />
+      <Testimonials />
     </main>
   );
 }
