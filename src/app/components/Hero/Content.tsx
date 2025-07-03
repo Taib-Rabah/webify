@@ -21,19 +21,13 @@ function Title() {
 
 function Description() {
   return (
-    <p className="text-white/70 max-w-lg xl:max-w-lg 2xs:fs-4.25 sm:fs-4.5 md:fs-4.75">
-      {data.description}
-    </p>
+    <p className="text-white/70 max-w-lg xl:max-w-lg 2xs:fs-4.25 sm:fs-4.5 md:fs-4.75">{data.description}</p>
   );
 }
 
 function ActionButton() {
   return (
-    <Button
-      variant={"link"}
-      size="min"
-      className="text-[#68D585] font-semibold text-lg sm:text-xl"
-    >
+    <Button variant={"link"} size="min" className="text-[#68D585] font-semibold text-lg sm:text-xl">
       Get a free trial <ArrowRight className="stroke-3" />
     </Button>
   );

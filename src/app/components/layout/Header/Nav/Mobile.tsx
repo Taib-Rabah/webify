@@ -1,17 +1,17 @@
 import { Menu } from "lucide-react";
 import Link from "next/link";
-import { links } from "./data";
 import {
-  SheetFooter,
   Sheet,
   SheetClose,
   SheetContent,
   SheetDescription,
+  SheetFooter,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
 } from "~/components/shadcn/sheet";
 import ThemeToggler from "~/components/ThemeToggler";
+import { links } from "./data";
 
 export default function MobileNav() {
   return (
@@ -40,10 +40,11 @@ function SheetBody() {
         {links.map((link) => (
           <li key={link.id}>
             <SheetClose asChild>
-              <Link href={link.href} className="hover:bg-primary/15 px-4 py-2 group w-full grid grid-cols-[auto_1fr] gap-3 items-center place-items-end">
-                <span className="font-semibold text-xl group-hover:text-primary">
-                  {link.label}
-                </span>
+              <Link
+                href={link.href}
+                className="hover:bg-primary/15 px-4 py-2 group w-full grid grid-cols-[auto_1fr] gap-3 items-center place-items-end"
+              >
+                <span className="font-semibold text-xl group-hover:text-primary">{link.label}</span>
                 <span className="h-0.5 w-11/12 group-hover:w-full duration-200 col-2 bg-current/80 group-hover:bg-primary rounded-full inline-block"></span>
               </Link>
             </SheetClose>
