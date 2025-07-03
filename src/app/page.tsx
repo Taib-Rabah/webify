@@ -1,4 +1,4 @@
-import { Companies, Features, Hero } from "~/app/components";
+import { Companies, Features, Hero, Pricing } from "~/app/components";
 
 export default function Home() {
   return (
@@ -6,6 +6,7 @@ export default function Home() {
       <Hero />
       <Companies />
       <Features />
+      <Pricing />
     </main>
   );
 }

@@ -9,7 +9,7 @@ export default function Features() {
     <div className="wrapper overflow-hidden">
       <div>
         <FeaturesOverview />
-        <div className="mt-15 sm:mt-30 flex flex-col gap-24 sm:gap-40">
+        <div className="mt-15 mb-30 sm:mt-30 flex flex-col gap-24 sm:gap-40">
           {features.map((feature) => (
             <Feature key={feature.id} {...feature} />
           ))}
