@@ -1,10 +1,10 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Logo from "~/app/components/Header/Logo";
-import Nav from "~/app/components/Header/Nav";
 import { Button } from "~/components/shadcn/button";
 import ThemeToggler from "~/components/ThemeToggler";
+import Logo from "./Logo";
+import Nav from "./Nav";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState<true | undefined>();

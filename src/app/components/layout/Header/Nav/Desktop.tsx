@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { links } from "~/app/components/Header/Nav/data";
+import { links } from "./data";
 
 export default function DesktopNav() {
   return (

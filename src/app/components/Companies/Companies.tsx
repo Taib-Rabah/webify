@@ -1,9 +1,4 @@
-import Askimat from "~/app/components/Companies/Logos/Askimat";
-import Coworks from "~/app/components/Companies/Logos/Coworks";
-import Dorfus from "~/app/components/Companies/Logos/Dorfus";
-import Greener from "~/app/components/Companies/Logos/Greener";
-import MakeLess from "~/app/components/Companies/Logos/MakeLess";
-import SaaSToday from "~/app/components/Companies/Logos/SaaSToday";
+import { Askimat, Coworks, Dorfus, Greener, MakeLess, SaaSToday } from "./Logos";
 
 export default function Companies() {
   return (

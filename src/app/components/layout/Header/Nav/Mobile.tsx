@@ -1,6 +1,6 @@
 import { Menu } from "lucide-react";
 import Link from "next/link";
-import { links } from "~/app/components/Header/Nav/data";
+import { links } from "./data";
 import {
   SheetFooter,
   Sheet,

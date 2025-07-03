@@ -1,5 +1,4 @@
-import Companies from "~/app/components/Companies/Companies";
-import Hero from "~/app/components/Hero/Hero";
+import { Companies, Hero } from "~/app/components";
 
 export default function Home() {
   return (

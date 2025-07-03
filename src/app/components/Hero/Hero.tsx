@@ -1,5 +1,5 @@
-import Content from "~/app/components/Hero/Content";
-import Image from "~/app/components/Hero/Image";
+import Content from "./Content";
+import Image from "./Image";
 
 export default function Hero() {
   return (
