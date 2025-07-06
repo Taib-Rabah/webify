@@ -71,7 +71,7 @@ function PricingToggle({
         checked={defaultPricing === "yearly"}
         onCheckedChange={(checked) => {
           if (onPricingChange === undefined) return;
-          checked ? onPricingChange("yearly") : onPricingChange("monthly");
+          onPricingChange(checked ? "yearly" : "monthly");
         }}
       ></Switch>
       <span>Yearly</span>

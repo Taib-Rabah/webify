@@ -78,6 +78,7 @@ function Controls({ api, count, current, draggable, setDraggable }: ControlsProp
       <div className="flex gap-4">
         {Array.from({ length: count }).map((_, ind) => (
           <button
+            key={ind}
             className={`w-6 h-6 rounded-full inline-block duration-200 cursor-pointer ${ind === current ? "bg-primary pointer-events-none" : "bg-muted"}`}
             onClick={() => api?.scrollTo(ind)}
           />

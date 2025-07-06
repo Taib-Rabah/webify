@@ -42,7 +42,7 @@ export default function Header() {
         </div>
         <div className="flex ml-auto gap-3 md:gap-8">
           <Nav />
-          <Button className="font-semibold not-lg:-order-1">Start a free trial</Button>
+          <Button className="font-semibold not-lg:-order-1 not-xs:text-xs not-xs:px-3 not-xs:h-8">Start a free trial</Button>
         </div>
       </div>
     </header>
