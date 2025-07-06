@@ -12,9 +12,9 @@ export default function Testimonials() {
   const [draggable, setDraggable] = useState(true);
 
   useEffect(() => {
-    console.log(draggable)
-  }, [draggable])
-  
+    console.log(draggable);
+  }, [draggable]);
+
   useEffect(() => {
     if (!api) return;
 
@@ -79,7 +79,7 @@ function Controls({ api, count, current, draggable, setDraggable }: ControlsProp
         {Array.from({ length: count }).map((_, ind) => (
           <button
             key={ind}
-            className={`w-6 h-6 rounded-full inline-block duration-200 cursor-pointer ${ind === current ? "bg-primary pointer-events-none" : "bg-muted"}`}
+            className={`w-6 h-6 rounded-full inline-block duration-200 cursor-pointer ${ind === current ? "bg-primary pointer-events-none" : "bg-foreground/15"}`}
             onClick={() => api?.scrollTo(ind)}
           />
         ))}
@@ -88,7 +88,10 @@ function Controls({ api, count, current, draggable, setDraggable }: ControlsProp
         <TooltipProvider>
           <Tooltip delayDuration={200}>
             <TooltipTrigger asChild>
-              <Button onClick={toggleDraggable} className={`grid grid-single ${draggable ? "" : "bg-muted hover:bg-muted/80"}`}>
+              <Button
+                onClick={toggleDraggable}
+                className={`grid grid-single ${draggable ? "" : "bg-gray-600 hover:bg-gray-500"}`}
+              >
                 <span className={draggable ? "invisible" : ""}>Enable drag scroll</span>
                 <span className={draggable ? "" : "invisible"}>Disable drag scroll</span>
               </Button>
